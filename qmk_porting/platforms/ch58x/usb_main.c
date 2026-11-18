@@ -7,6 +7,8 @@
 #include "protocol_supplement.h"
 #include "wait.h"
 
+#define INVALID_TASK_ID                 0xFF      // Task ID isn't setup properly
+
 static uint8_t usbTaskId = INVALID_TASK_ID;
 extern void suspend_power_down_quantum();
 extern void suspend_wakeup_init_quantum();
